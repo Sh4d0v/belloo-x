@@ -18,8 +18,10 @@ require "PHPMailer/PHPMailer.php";
 require "PHPMailer/SMTP.php";
 require "pusher.php";
 
-// Establish a connection to a MySQL database using the mysqli extension.
-// If the connection fails, the script exits and displays the error message.
+/*
+* Establish a connection to a MySQL database using the mysqli extension.
+* If the connection fails, the script exits and displays the error message.
+*/
 $mysqli = new mysqli($db_host, $db_username, $db_password, $db_name);
 if (mysqli_connect_errno()) {
     exit(mysqli_connect_error());
